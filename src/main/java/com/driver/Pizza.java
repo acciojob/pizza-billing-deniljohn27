@@ -30,7 +30,7 @@ public class Pizza {
         }
         this.cheese=80;
 
-        this.bill+="Base Price Of The Pizza: "+this.price+"\n";
+        this.bill+="Base Price Of The Pizza: "+this.price;
         // your code goes here
     }
 
@@ -73,10 +73,11 @@ public class Pizza {
                 this.bill+="Extra Toppings Added: "+this.toppings+"\n";
             }
             if(isTakeAway){
-                this.bill+="Paperbag Added: "+20+"\n";
-                isBillGenerated=true;
+                this.bill+="Paperbag Added: "+"20"+"\n";
+
             }
             this.bill+="Total Price: "+this.price;
+            isBillGenerated=true;
         }
         return this.bill;
     }
